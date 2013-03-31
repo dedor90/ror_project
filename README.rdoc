@@ -1,3 +1,12 @@
+I am attending Hacker Hours NYC. It is Thursdays @
+ View the Space
+360 7th Ave #4, New York, NY 10001
+
+on April 4th
+
+They are mainly a rails/javascript shop but getting a fresh pair of eyes from developers outside of the school would help me out on a few projects I've been working on. 
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
