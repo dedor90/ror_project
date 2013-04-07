@@ -14,5 +14,5 @@
 /log/*.log
 /tmp
 
-# Ignore my class notes for now
-Class\ Notes
+# Ignore class-related material
+ror_class/*
