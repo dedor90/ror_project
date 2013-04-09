@@ -13,6 +13,7 @@ class CoursesController < ApplicationController
   # GET /courses/1
   # GET /courses/1.json
   def show
+    #logger.debug "params hash is: #{params.inspect}"
     @course = Course.find(params[:id])
 
     respond_to do |format|

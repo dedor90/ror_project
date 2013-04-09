@@ -4,6 +4,6 @@ class Assignment
   field :grade, type: Integer
   field :description, type: String
   
-  belongs_to: Course
-  has_many: Uploads
+  belongs_to :course
+  has_many :uploads
 end

@@ -3,5 +3,5 @@ class Lecture
   field :number, type: Integer
   field :description, type: String
 
-  belongs_to: Course
+  belongs_to :course
 end
