@@ -1,6 +1,8 @@
 class CoursesController < ApplicationController
   # GET /courses
   # GET /courses.json
+  #  skip_before_filter :require_user, :only => [:new, :create]
+
   def index
     @courses = Course.all
 
