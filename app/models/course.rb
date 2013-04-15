@@ -5,5 +5,6 @@ class Course
   field :description, type: String
 
   has_and_belongs_to_many :users
-  has_many :assignments, :lectures
+  has_many :assignments
+  has_many :lectures
 end
