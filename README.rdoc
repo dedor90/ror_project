@@ -1,3 +1,18 @@
+Hw 3:
+
+
+Routing works, only to logout you must manually go to the logout path,
+i.e. type in "localhost:3000/logout" to do so. 
+
+
+
+
+
+---------------------------------------------------------------------------
+
+
+
+
 I am attending Hacker Hours NYC. It is Thursdays @
  View the Space
 360 7th Ave #4, New York, NY 10001
