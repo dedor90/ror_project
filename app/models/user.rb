@@ -4,5 +4,4 @@ class User
   field :email, type: String
 
   has_and_belongs_to_many :courses
-  has_many :uploads
 end
