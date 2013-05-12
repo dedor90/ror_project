@@ -3,6 +3,7 @@ class CoursesController < ApplicationController
   # GET /courses.json
   #  skip_before_filter :require_user, :only => [:new, :create]
 
+
   def index
     @courses = Course.all
 
@@ -37,7 +38,12 @@ class CoursesController < ApplicationController
 
   # GET /courses/1/edit
   def edit
-    @course = Course.find(params[:id])
+    if @current_user.role == "teacher"
+      @course = Course.find(params[:id])
+    else
+      flash[:error] = 'Invalid access'
+      redirect_to courses_path
+    end
   end
 
   # POST /courses

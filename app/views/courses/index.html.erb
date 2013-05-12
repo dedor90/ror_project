@@ -2,19 +2,26 @@
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Id</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Call Number</th>
+    <th>Title</th>
+    <th>Start</th>
+    <th>End</th>
+    <th>Meets On</th>
+    <th>Building</th>
+    <th>Room</th>
+    <th>Instructor</th>
   </tr>
 
 <% @courses.each do |course| %>
   <tr>
-    <td><%= course.name %></td>
-    <td><%= course.id %></td>
-    <td><%= course.description %></td>
+    <td><%= course.call_number %></td>
+    <td><%= course.title %></td>
+    <td><%= course.start_time %></td>
+    <td><%= course.end_time %></td>
+    <td><%= course.meets_on %></td>
+    <td><%= course.building %></td>
+    <td><%= course.room %></td>
+    <td><%= course.instructor %></td>
     <td><%= link_to 'Show', course %></td>
     <td><%= link_to 'Edit', edit_course_path(course) %></td>
     <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
