@@ -6,10 +6,11 @@ class User
 
   has_and_belongs_to_many :courses
 
+  after_initialize :init
 
-def after_initialize
+def init
   if new_record?
-  	role = "student"
+  	self.role ||= "student"
   end
 end
 
