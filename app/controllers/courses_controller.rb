@@ -42,7 +42,8 @@ class CoursesController < ApplicationController
       @course = Course.find(params[:id])
     else
       flash[:error] = 'Invalid access'
-      redirect_to courses_path
+      @course = Course.find(params[:id])
+     # redirect_to courses_path
     end
   end
 
