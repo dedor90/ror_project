@@ -5,7 +5,7 @@ class User
   field :role, type: String
 
   has_and_belongs_to_many :courses
-
+  validates :email, :presence => true
   after_initialize :init
 
 def init

@@ -12,4 +12,6 @@ class Course
   has_and_belongs_to_many :users
   has_many :assignments
   has_many :lectures
+
+  validates :course_title, :presence => true
 end
